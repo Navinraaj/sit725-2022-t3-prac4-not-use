@@ -1,14 +1,14 @@
 {
-  "name": "sit725-2022-t3-prac3",
+  "name": "sit725-2022-t3-prac4",
   "version": "1.0.0",
-  "description": "SIT725 Week3",
+  "description": "SIT725 Week4",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Navinraaj/sit725-2022-t3-prac3.git"
+    "url": "git+https://github.com/Navinraaj/sit725-2022-t3-prac4.git"
   },
   "keywords": [
     "Express",
@@ -17,11 +17,15 @@
   "author": "Navin Raaj",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Navinraaj/sit725-2022-t3-prac3/issues"
+    "url": "https://github.com/Navinraaj/sit725-2022-t3-prac4/issues"
   },
-  "homepage": "https://github.com/Navinraaj/sit725-2022-t3-prac3#readme",
+  "homepage": "https://github.com/Navinraaj/sit725-2022-t3-prac4#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "Express": "^3.0.1"
+    "Express": "^3.0.1",
+    "mongodb": "^4.12.1"
   }
 }
+
+

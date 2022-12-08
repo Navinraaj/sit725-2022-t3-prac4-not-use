@@ -1,4 +1,4 @@
-const cardList = [
+/*const cardList = [
     {
         title: "Hungry people",
         image: "images/user-image.png",
@@ -11,7 +11,16 @@ const cardList = [
         link: "About Food wastage",
         desciption: "Demo desciption about Food wastage"
     }
-]
+]*/
+
+const getProjects = () => {
+    $.get('/api/projects',(response) => {
+        if(response.statusCode==200){
+            addCards(response.data);
+        }
+    })
+}
+
 const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
@@ -42,12 +51,12 @@ const addCards = (items) => {
 }
 
 
-
 $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('#formSubmit').click(()=>{
         submitForm();
     })
-    addCards(cardList);
+    getProjects();
     $('.modal').modal();
   });
+
